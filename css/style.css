@@ -5,40 +5,54 @@
 }
 
 
-
-.education-entry, .work-entry, .project-entry {
+.container{
+  border: 1px solid #888888;
+  box-shadow: 5px 5px 2px #888888;
+}
+.education-entry, .work-entry, .skills-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
 
 
+#no_indent {
+    padding: 10px 0;
+   }
+
+#no_margin
+  {
+    margin:0px;
+  }
+.spacing {
+  width:18%;
+}
+
 h1 {
 
-  font-size: 40px;
-  color: #F5A623;
+  font-size: 30px;
+  color:#585858;
   line-height: 48px;
   display: inline;
 }
 
 h2 {
-  font-style: bold;
-  font-size: 24px;
-  color: #999999;
+  display: block;
+  font-size: 16px;
+  color: #060720;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
   font-style: italic;
-  font-size: 20px;
+  font-size: 14px;
   color: #000000;
   line-height: 22px;
 }
 
 h4 {
-  font-style: bold;
-  font-size: 14px;
-  color: #4A4A4A;
+  font-size: 10px;
+  color:white;
   line-height: 17px;
 }
 
@@ -46,21 +60,22 @@ h2, h3, h4, h5 {
   padding:10px;
   padding-left: 5%;
   padding-right: 5%;
+  background-color: #E6E6E6;
 }
 
 
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
+  color: #585858;
   line-height: 16px;
-  float: left;
+
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
+  color: #585858;
   line-height: 16px;
   float: right;
 
@@ -69,13 +84,13 @@ h2, h3, h4, h5 {
 p {
   font-size: 14px;
   color: #333333;
-  line-height: 21px;
+  line-height: 16px;
 }
 
 a {
-  color: #1199C3;
+  color: rgb(3, 35, 56);
   text-decoration: none;
-  margin-top: 10px;
+  margin: 5px;
   display: block;
 }
 
@@ -87,7 +102,7 @@ a {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: rgba(135, 140, 146, 0.9);
   display: none;
 }
 
@@ -95,45 +110,53 @@ a {
   display: none;
 }
 
-.orange {
-  background-color: #F5AE23;
+.blue {
+  background-color: #060720;
 }
 
-.orange-text {
-  color: #F5AE23;
+.blue-text{
+  color: #060720;
 }
+
+.dark-gray {
+  background-color: #585858;
+}
+
+.gray-text {
+  color: #585858;
+}
+
 
 .white-text {
   font-weight: bold;
   color: #FFFFFF;
 }
 
-.gray {
+.FFFFFF {
   background-color: #F3F3F3;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   clear:both;
 }
 
-.dark-gray {
-  background-color: #4A4A4A;
-}
+
+
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  border-bottom: 1px solid #060720;
+  background: #060720;
 }
 
-.flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+#right {
+  border-left:1px solid #585858;
+}
+
+hr {
+ background-color: green;
 }
 
 .center-content {
-  padding: 5%;
+  padding: 1%;
 }
 
 ul {
@@ -152,7 +175,10 @@ img {
   padding: 10px;
 }
 
+.center-text {
+  text-align: center;
 
+}
 /* Bar chart stuff */
 .chart div {
   font: 10px sans-serif;

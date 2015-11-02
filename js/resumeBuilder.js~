@@ -1,0 +1,22 @@
+var formattedName = HTMLheaderName.replace("%data%","Ganga Bhavani");
+var formattedRole = HTMLheaderRole.replace("%data%","Front-end webdeveloper");
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
+var bio = {
+	"Name": "Ganga Bhavani",
+	"Role": "Front-end Web Developer",
+	"Contact info": "79 Brookside Dr, Fairfield, CT-06824",
+	"picture URL": "google.com",
+	"welcome message": "Hello",
+	"skills": "HTML, CSS, Javascript, Jquery and Ajax"
+};
+
+$("#main").prepend(bio.skills);
+$("#main").prepend(bio.(welcome message));
+$("#main").prepend(bio.(picture URL));
+$("#main").prepend(bio.(Contact info));
+$("#main").prepend(bio.Role);
+$("#main").prepend(bio.Name);
+
